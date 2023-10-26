@@ -26,8 +26,8 @@ export default function GroupButton(props) {
 `
   return (
     <ButtonBox>
-      {gButtons.map(bText=>{
-        return <StyledButton>{bText}</StyledButton>
+      {gButtons.map((bText, index)=>{
+        return <StyledButton key={index} >{bText}</StyledButton>
       })}
     </ButtonBox>
   )
